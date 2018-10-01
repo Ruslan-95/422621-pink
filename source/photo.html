@@ -21,14 +21,25 @@
     </header>
 
     <section class="feed">
-        <section class="feed__user-post post">
-            <figure class="post__figure">
-                <img class="post__img" src="http://placehold.it/150x100" alt="photo">
-                <figcaption class="post__username">Левон <span class="post__publish-date">(5 часов назад)</span>
-                </figcaption>
-            </figure>
-            <p class="post__about">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <button class="post__like-btn like-btn--active">НравитсяЭ 356</button>
+        <section class="feed__user-post">
+            <div class="post-pano">
+                <figure class="post-pano__figure">
+                    <img class="post-pano__img" src="http://placehold.it/150x100" alt="photo">
+                    <figcaption class="post-pano__username">Анна<span class="post-pano__publish-date">(5 часов назад)</span>
+                    </figcaption>
+                </figure>
+                <p class="post-pano__about">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                <button class="post-pano__like-btn">Нравится 215</button>
+            </div>
+            <div class="post">
+                <figure class="post__figure">
+                    <img class="post__img" src="http://placehold.it/150x100" alt="photo">
+                    <figcaption class="post__username">Левон <span class="post__publish-date">(5 часов назад)</span>
+                    </figcaption>
+                </figure>
+                <p class="post__about">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <button class="post__like-btn">Нравится 356</button>
+            </div>
         </section>
         <p class="feed__paragraph">Затмите их всех!</p>
         <p class="feed__paragraph">Выкладывайте все, что накопилось в телефоне!</p>
@@ -44,23 +55,25 @@
                 <div class="range__bar-item bar-item--active"></div>
             </div>
         </div>
-        <div class="publish__maneg-btn">
-            <button class="publish__send-btn publish__btn--active" type="button">Запостить</button>
-            <button class="publish__cancel-btn publish__btn--disable" type="button">Отменить</button>
+        <div class="publish__maneg">
+            <button class="publish__maneg-btn" type="submit">Запостить</button>
+            <button class="publish__maneg-btn publish__maneg-btn--disable" type="button">Отменить</button>
         </div>
     </section>
 
     <footer class="footer">
-        <img class="footer__logo" src="http://placehold.it/150x100" alt="logo">
+        <a class="footer__logo-link" href="#">
+            <img class="footer__logo-img" src="http://placehold.it/150x100" alt="logo">
+        </a>
         <ul class="footer__networks-list">
             <li class="footer__networks-item">
-                <a class="footer__networks-icon twitter-icon" href="#"></a>
+                <a class="footer__networks-icon twitter-icon" href="#">Твиттер</a>
             </li>
             <li class="footer__networks-item">
-                <a class="footer__networks-icon facebook-icon" href="#"></a>
+                <a class="footer__networks-icon facebook-icon" href="#">Фейсбук</a>
             </li>
             <li class="footer__networks-item">
-                <a class="footer__networks-icon youtube-icon" href="#"></a>
+                <a class="footer__networks-icon youtube-icon" href="#">Ютуб</a>
             </li>
         </ul>
         <p class="footer__copyright">Разработанно</p>
