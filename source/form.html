@@ -9,7 +9,9 @@
 <main>
     <header class="header">
         <nav class="header__navigation">
-            <img src="http://placehold.it/150x100http://placehold.it/150x100" alt="logo" class="header__logo">
+            <a class="header__logo-link" href="#">
+                <img class="header__logo-img" src="http://placehold.it/150x100http://placehold.it/150x100" alt="logo">
+            </a>
             <button class="header__navigation-button" type="button"></button>
             <menu class="header__menu-list">
                 <li class="header__menu-item"></li>
@@ -23,11 +25,14 @@
                 на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
             <label for="last-name">Фамилия:</label>
 
-            <input class="story-share__last-name" id="last-name" type="text" name="last-name" placeholder="Укажите фамилию *" required>
+            <input class="story-share__last-name" id="last-name" type="text" name="last-name"
+                   placeholder="Укажите фамилию *" required>
             <label for="first-name">Имя:</label>
-            <input class="story-share__first-name" id="first-name" type="text" name="first-name" placeholder="Введите ваше имя *" required>
+            <input class="story-share__first-name" id="first-name" type="text" name="first-name"
+                   placeholder="Введите ваше имя *" required>
             <label for="middle-name">Отчесто:</label>
-            <input class="story-share__middle-name" id="middle-name" type="text" name="middle-name" placeholder="Ну и отчество тоже">
+            <input class="story-share__middle-name" id="middle-name" type="text" name="middle-name"
+                   placeholder="Ну и отчество тоже">
         </section>
 
         <section class="trip">
@@ -36,32 +41,26 @@
                 достижения в путешествии</p>
             <label for="selfie" class="trip__label">
                 <input id="selfie" type="checkbox" class="visually-hidden trip__checkbox" checked>
-                <span class="trip__custom-checkbox"></span>
                 <span class="trip__filter-name">Сделал селфи с акулой</span>
             </label>
             <label for="beach" class="trip__label">
                 <input id="beach" type="checkbox" class="visually-hidden trip__checkbox" checked>
-                <span class="trip__custom-checkbox"></span>
                 <span class="trip__filter-name">Обгорел на пляже</span>
             </label>
             <label for="star" class="trip__label">
                 <input id="star" type="checkbox" class="visually-hidden trip__checkbox">
-                <span class="trip__custom-checkbox"></span>
                 <span class="trip__filter-name">Видел Чака Норриса</span>
             </label>
             <label for="souvenirs" class="trip__label">
                 <input id="souvenirs" type="checkbox" class="visually-hidden trip__checkbox">
-                <span class="trip__custom-checkbox"></span>
                 <span class="trip__filter-name">Накупил сувениров</span>
             </label>
             <label for="build" class="trip__label">
                 <input id="build" type="checkbox" class="visually-hidden trip__checkbox" checked>
-                <span class="trip__custom-checkbox"></span>
                 <span class="trip__filter-name">Удержал башню</span>
             </label>
             <label for="hooligan" class="trip__label">
                 <input id="hooligan" type="checkbox" class="visually-hidden trip__checkbox">
-                <span class="trip__custom-checkbox"></span>
                 <span class="trip__filter-name">Разгромил отель</span>
             </label>
         </section>
@@ -79,30 +78,27 @@
                 путешествовали?</p>
             <label for="ios" class="trip__label">
                 <input id="ios" type="radio" class="visually-hidden trip__checkbox" checked>
-                <span class="trip__custom-checkbox"></span>
                 <span class="trip__filter-name">Pink для iOS</span>
             </label>
 
             <label for="android" class="trip__label">
                 <input id="android" type="radio" class="visually-hidden trip__checkbox">
-                <span class="trip__custom-checkbox"></span>
                 <span class="trip__filter-name">Pink для Android</span>
             </label>
 
             <label for="windows" class="trip__label">
                 <input id="windows" type="radio" class="visually-hidden trip__checkbox">
-                <span class="trip__custom-checkbox"></span>
                 <span class="trip__filter-name">Pink для Windows</span>
             </label>
         </section>
 
         <section class="emotions">
             <label for="feelings" class="emotions__label">
-                <input id="feelings" type="text" class="emotions__imput">
+                <input id="feelings" type="textarea" class="emotions__imput">
             </label>
         </section>
 
-        <button class="form__send-btn" type="submit" value="отправить форму">Отправить форму</button>
+        <button class="form__send-btn" type="submit">Отправить форму</button>
         <p class="form__requared-info"> * — Обязательные поля</p>
     </form>
     <footer class="footer">
