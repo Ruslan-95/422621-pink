@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Academy: Пинк</title>
+</head>
+<body>
+
+<main>
+    <header class="header">
+        <nav class="header__navigation">
+            <a class="header__logo-link" href="#">
+                <img class="header__logo-img" src="http://placehold.it/150x100http://placehold.it/150x100" alt="logo">
+            </a>
+            <button class="header__navigation-button" type="button"></button>
+            <menu class="header__menu-list">
+                <li class="header__menu-item"></li>
+            </menu>
+        </nav>
+        <h1 class="header__title">Фотографии пользователей</h1>
+        <p class="header__paragraph">Взгляните на фотографии, которые выкладывают пользователи!
+            Видите, как не хватает ваших?</p>
+    </header>
+
+    <section class="feed">
+        <section class="feed__user-post">
+
+            <div class="post pano-post">
+                <figure class="post__figure">
+                    <img class="post__img" src="http://placehold.it/150x100" alt="photo">
+                    <figcaption class="post__username">Анна<span class="post__publish-date">(5 часов назад)</span>
+                    </figcaption>
+                </figure>
+                <p class="post__about">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую
+                    трансляцию в перископе, задавайте свои вопросы!</p>
+                <button class="post__like-btn">Нравится 215</button>
+            </div>
+            <div class="post">
+                <figure class="post__figure">
+                    <img class="post__img" src="http://placehold.it/150x100" alt="photo">
+                    <figcaption class="post__username">Левон <span class="post__publish-date">(5 часов назад)</span>
+                    </figcaption>
+                </figure>
+                <p class="post__about">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <button class="post__like-btn">Нравится 356</button>
+            </div>
+
+        </section>
+        <p class="feed__paragraph">Затмите их всех!</p>
+        <p class="feed__paragraph">Выкладывайте все, что накопилось в телефоне!</p>
+    </section>
+
+    <section class="publish">
+        <img class="publish__img" src="http://placehold.it/150x100" alt="here ur photo">
+        <button class="publish__сut" type="button">Обрезать</button>
+        <button class="publish__fill" type="button">Залоивка</button>
+        <button class="publish__contrast" type="button">Контраст</button>
+        <div class="publish__range range">
+            <div class="range__bar">
+                <div class="range__bar-item bar-item--active"></div>
+            </div>
+        </div>
+        <div class="publish__maneg">
+            <button class="publish__maneg-btn" type="submit">Запостить</button>
+            <button class="publish__maneg-btn publish__maneg-btn--disable" type="button">Отменить</button>
+        </div>
+    </section>
+    <footer class="footer">
+        <a class="footer__logo-link" href="#">
+            <img class="footer__logo-img" src="http://placehold.it/150x100" alt="logo">
+        </a>
+        <ul class="footer__networks-list footer-network">
+            <li class="footer-network__item-logo item-logo item-logo--twitter">
+                <a href="#">Твиттер</a>
+            </li>
+            <li class="footer-network__item-logo item-logo item-logo--facebook">
+                <a href="#">Фейсбук</a>
+            </li>
+            <li class="footer-network__item-logo item-logo item-logo--youtube">
+                <a href="#">Ютуб</a>
+            </li>
+        </ul>
+        <p class="footer__copyright">Разработанно</p>
+    </footer>
+</main>
+
+</body>
+</html>

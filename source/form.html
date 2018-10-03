@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Academy: Пинк</title>
+</head>
+<body>
+
+<main>
+    <header class="header">
+        <nav class="header__navigation">
+            <a class="header__logo-link" href="#">
+                <img class="header__logo-img" src="http://placehold.it/150x100http://placehold.it/150x100" alt="logo">
+            </a>
+            <button class="header__navigation-button" type="button"></button>
+            <menu class="header__menu-list">
+                <li class="header__menu-item"></li>
+            </menu>
+        </nav>
+    </header>
+
+    <form class="form" action="https://echo.htmlacademy.ru" method="post">
+        <section class="story-share">
+            <p class="story-share__paragraph">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль
+                на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+            <label for="last-name">Фамилия:</label>
+
+            <input class="story-share__last-name" id="last-name" type="text" name="last-name" placeholder="Укажите фамилию *" required>
+            <label for="first-name">Имя:</label>
+            <input class="story-share__first-name" id="first-name" type="text" name="first-name" placeholder="Введите ваше имя *" required>
+            <label for="middle-name">Отчесто:</label>
+            <input class="story-share__middle-name" id="middle-name" type="text" name="middle-name" placeholder="Ну и отчество тоже">
+        </section>
+
+        <section class="trip">
+
+            <p class="trip__paragraph">Ваши безбашенные
+                достижения в путешествии</p>
+            <label for="selfie" class="trip__label">Сделал селфи с акулой
+                <input id="selfie" type="checkbox" class="visually-hidden trip__checkbox" checked>
+            </label>
+            <label for="beach" class="trip__label">Обгорел на пляже
+                <input id="beach" type="checkbox" class="visually-hidden trip__checkbox" checked>
+            </label>
+            <label for="star" class="trip__label">Видел Чака Норриса
+                <input id="star" type="checkbox" class="visually-hidden trip__checkbox">
+            </label>
+            <label for="souvenirs" class="trip__label">Накупил сувениров
+                <input id="souvenirs" type="checkbox" class="visually-hidden trip__checkbox">
+            </label>
+            <label for="build" class="trip__label">Удержал башню
+                <input id="build" type="checkbox" class="visually-hidden trip__checkbox" checked>
+            </label>
+            <label for="hooligan" class="trip__label">Разгромил отель
+                <input id="hooligan" type="checkbox" class="visually-hidden trip__checkbox">
+            </label>
+        </section>
+
+        <section class="contacts">
+            <label for="phone">Номер телефона:</label>
+            <input class="contacts__phone" id="phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
+
+            <label for="phone">Адрес почты:</label>
+            <input class="contacts__email" id="email" type="text" name="email" placeholder="Введите почту *" required>
+        </section>
+
+        <section class="platform-trip">
+            <p class="platform-trip__paragraph">С каким приложением
+                путешествовали?</p>
+            <label class="trip__label">Pink для iOS
+                <input type="radio" class="visually-hidden trip__checkbox" checked>
+            </label>
+
+            <label class="trip__label">Pink для Android
+                <input type="radio" class="visually-hidden trip__checkbox">
+            </label>
+
+            <label class="trip__label">Pink для Windows
+                <input type="radio" class="visually-hidden trip__checkbox">
+            </label>
+        </section>
+
+        <section class="emotions">
+            <textarea class="emotions__comment" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </section>
+
+        <button class="form__send-btn" type="submit">Отправить форму</button>
+        <p class="form__required-info"> * — Обязательные поля</p>
+    </form>
+    <footer class="footer">
+        <a class="footer__logo-link" href="#">
+            <img class="footer__logo-img" src="http://placehold.it/150x100" alt="logo">
+        </a>
+        <ul class="footer__networks-list footer-network">
+            <li class="footer-network__item-logo item-logo item-logo--twitter">
+                <a href="#">Твиттер</a>
+            </li>
+            <li class="footer-network__item-logo item-logo item-logo--facebook">
+                <a href="#">Фейсбук</a>
+            </li>
+            <li class="footer-network__item-logo item-logo item-logo--youtube">
+                <a href="#">Ютуб</a>
+            </li>
+        </ul>
+        <p class="footer__copyright">Разработанно</p>
+    </footer>
+</main>
+
+</body>
+</html>
