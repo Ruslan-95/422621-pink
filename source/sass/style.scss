@@ -1,0 +1,42 @@
+@import "address.scss";
+@import "arguments.scss";
+@import "contacts.scss";
+@import "emotions.scss";
+@import "feed.scss";
+@import "footer.scss";
+@import "form.scss";
+@import "header.scss";
+@import "home-screen.scss";
+@import "platform-trip.scss";
+@import "price.scss";
+@import "publish.scss";
+@import "range.scss";
+@import "slider.scss";
+@import "story-share.scss";
+@import "trip.scss";
+@import "visually-hidden.scss";
+@import "wrapper.scss";
+
+body {
+  background: #ffffff;
+  margin: 0;
+  padding: 0;
+  min-width: 280px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #283645;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
