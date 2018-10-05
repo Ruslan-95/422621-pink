@@ -1,3 +1,27 @@
 .arguments {
   background-color: #f2f2f2;
+  padding: 45px 0 0 0;
+}
+
+.custom-paragraph {
+  max-width: 250px;
+  font-size: 24px;
+  margin: 0 auto;
+
+  &:first-child {
+    padding-bottom: 40px;
+  }
+}
+
+.arguments__motivation-list {
+  display: flex;
+  flex-direction: column;
+  margin: 120px auto 40px;
+  padding: 0;
+  max-width: 280px;
+}
+
+.arguments__preview-app {
+  min-height: 280px;
+  margin: 0 auto;
 }
