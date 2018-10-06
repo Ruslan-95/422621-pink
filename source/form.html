@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>HTML Academy: Пинк</title>
     <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
@@ -24,13 +25,13 @@
         <section class="story-share">
             <p class="story-share__paragraph">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль
                 на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
-            <label for="last-name">Фамилия:</label>
 
-            <input class="story-share__last-name" id="last-name" type="text" name="last-name" placeholder="Укажите фамилию *" required>
-            <label for="first-name">Имя:</label>
-            <input class="story-share__first-name" id="first-name" type="text" name="first-name" placeholder="Введите ваше имя *" required>
-            <label for="middle-name">Отчесто:</label>
-            <input class="story-share__middle-name" id="middle-name" type="text" name="middle-name" placeholder="Ну и отчество тоже">
+            <label class="story-share__label" for="last-name">Фамилия:</label>
+            <input class="story-share__input story-share__input--last-name" id="last-name" type="text" name="last-name" placeholder="Укажите фамилию *" required>
+            <label class="story-share__label" for="first-name">Имя:</label>
+            <input class="story-share__input story-share__first-name" id="first-name" type="text" name="first-name" placeholder="Введите ваше имя *" required>
+            <label class="story-share__label" for="middle-name">Отчесто:</label>
+            <input class="story-share__input story-share__middle-name" id="middle-name" type="text" name="middle-name" placeholder="Ну и отчество тоже">
         </section>
 
         <section class="trip">
@@ -57,11 +58,11 @@
         </section>
 
         <section class="contacts">
-            <label for="phone">Номер телефона:</label>
-            <input class="contacts__phone" id="phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
+            <label class="contacts__label" for="phone">Номер телефона:</label>
+            <input class="contacts__input contacts__input--phone" id="phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
 
-            <label for="phone">Адрес почты:</label>
-            <input class="contacts__email" id="email" type="text" name="email" placeholder="Введите почту *" required>
+            <label class="contacts__label" for="phone">Адрес почты:</label>
+            <input class="contacts__input contacts__input--email" id="email" type="text" name="email" placeholder="Введите почту *" required>
         </section>
 
         <section class="platform-trip">
@@ -81,6 +82,7 @@
         </section>
 
         <section class="emotions">
+            <p class="emotions__paragraph">Опишите свои эмоции</p>
             <textarea class="emotions__comment" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </section>
 
