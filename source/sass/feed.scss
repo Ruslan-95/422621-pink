@@ -1,15 +1,15 @@
 .feed {
- display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
- padding: 50px 0 50px;
+  padding: 50px 0 50px;
 }
 
 .feed__paragraph {
- max-width: 280px;
- margin: 0;
+  max-width: 280px;
+  margin: 0;
 }
 
 .feed__user-post {
- margin: 50px 0 50px 0;
+  margin: 50px 0 50px 0;
 }
