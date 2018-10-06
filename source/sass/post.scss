@@ -1,7 +1,36 @@
+
 .post {
+  max-width: 280px;
   background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
 }
 
 .publish {
   background-color: #f2f2f2;
 }
+
+.post__about {
+  text-align: left;
+  padding: 15px;
+  margin: 0;
+}
+
+.post__img {
+  min-width: 280px;
+
+}
+
+.post__figure {
+  margin: 0;
+}
+
+.post__username {
+  text-align: left;
+  padding: 20px 15px 0 15px;
+}
+
+.post__like-btn {
+  margin: 0 0 25px 0;
+}
+
