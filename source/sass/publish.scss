@@ -1,0 +1,38 @@
+.publish {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.publish__img {
+  min-width: 280px;
+}
+
+.publish__edit {
+  margin: 40px 0 40px 0;
+  display: flex;
+}
+
+.publish__range {
+  margin: 0 0 20px 0;
+}
+
+.publish__maneg {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+}
+
+.publish__maneg-btn {
+  color: #d22856;
+  font-weight: bold;
+  width: 280px;
+  height: 50px;
+  border: 3px solid #d22856;
+  border-radius: 25px;
+  background: transparent;
+
+  &:first-child {
+    margin-bottom: 10px;
+  }
+}

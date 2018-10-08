@@ -3,13 +3,15 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 <main class="wrapper">
     <header class="header">
         <nav class="header__navigation">
             <a class="header__logo-link" href="#">
-                <img class="header__logo-img" src="http://placehold.it/150x100http://placehold.it/150x100" alt="logo">
+                <img class="header__logo-img" src="http://placehold.it/150x100" alt="logo">
             </a>
             <button class="header__navigation-button" type="button"></button>
             <menu class="header__menu-list">
@@ -28,7 +30,7 @@
     </section>
     <section class="arguments">
         <p class="arguments__slogan custom-paragraph">Устали от серости мегаполиса?</p>
-        <p class="arguments__slogan custom-paragraph">Устали от серости мегаполиса?</p>
+        <p class="arguments__slogan custom-paragraph">Нам есть, что вам предложить!</p>
         <ul class="arguments__motivation-list">
             <li class="arguments__motivation-item">
                 <h5 class="arguments__motivation-title">Поднимает настроение</h5>
@@ -48,7 +50,7 @@
                     заводите новых</p>
             </li>
         </ul>
-        <img src="http://placehold.it/150x100" alt="preview application" class="arguments__preview-app">
+        <img src="../img/iphone-screen-mobile@1x.png" alt="preview application" class="arguments__preview-app">
     </section>
     <section class="slider">
         <article class="slider__slide">
@@ -92,15 +94,15 @@
         <p class="address__title custom-paragraph">Свяжитесь с нами!</p>
 
         <p class="address__connect">Звоните:</p>
-        <a href="tel:+78001000900">78001000900</a>
+        <a class="address__link" href="tel:+78001000900">78001000900</a>
 
         <p class="address__connect">Пишите:</p>
-        <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        <a class="address__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
 
         <p class="address__connect">Приезжайте в гости:</p>
-        <p>ул. Большая Конюшенная, 19/8</p>
+        <a class="address__link">ул. Большая Конюшенная, 19/8</a>
 
-        <img src="http://placehold.it/150x100" alt="map">
+        <img class="address__map" src="http://placehold.it/150x100" alt="map">
 
     </section>
 </main>

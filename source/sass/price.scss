@@ -1,0 +1,43 @@
+.price {
+  background-color: #f2f2f2;
+  min-height: 450px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.price__article {
+  min-height: 335px;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.price__features-list {
+  padding: 0;
+  margin: 0;
+  border-left: 2px solid #e5e5e5;
+  border-right: 2px solid #e5e5e5;
+  text-align: left;
+}
+
+.price__title {
+  background: #2b3848;
+  color: #ffffff;
+  border: 2px solid #e5e5e5;
+}
+
+.price__name {
+  margin: 0;
+  padding: 25px 0 15px 0;
+  font-weight: bold;
+}
+
+.price__rate {
+  margin: 0;
+  padding: 0 0 25px 0;
+}
+
+.price__features-item {
+  padding: 10px 20px 10px 20px;
+  border-bottom: 2px solid #e5e5e5;
+}

@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-
-<main>
+<main class="wrapper">
     <header class="header">
         <nav class="header__navigation">
             <a class="header__logo-link" href="#">
-                <img class="header__logo-img" src="http://placehold.it/150x100http://placehold.it/150x100" alt="logo">
+                <img class="header__logo-img" src="http://placehold.it/150x100" alt="logo">
             </a>
             <button class="header__navigation-button" type="button"></button>
             <menu class="header__menu-list">
@@ -18,14 +19,13 @@
             </menu>
         </nav>
         <h1 class="header__title">Фотографии пользователей</h1>
-        <p class="header__paragraph">Взгляните на фотографии, которые выкладывают пользователи!
-            Видите, как не хватает ваших?</p>
     </header>
 
     <section class="feed">
+        <p class="feed__paragraph">Взгляните на фотографии, которые выкладывают пользователи!
+            Видите, как не хватает ваших?</p>
         <section class="feed__user-post">
-
-            <div class="post pano-post">
+            <div class="post post--pano">
                 <figure class="post__figure">
                     <img class="post__img" src="http://placehold.it/150x100" alt="photo">
                     <figcaption class="post__username">Анна<span class="post__publish-date">(5 часов назад)</span>
@@ -44,7 +44,6 @@
                 <p class="post__about">Вчера он на луну летал, сегодня в руки к нам попал.</p>
                 <button class="post__like-btn">Нравится 356</button>
             </div>
-
         </section>
         <p class="feed__paragraph">Затмите их всех!</p>
         <p class="feed__paragraph">Выкладывайте все, что накопилось в телефоне!</p>
@@ -52,9 +51,11 @@
 
     <section class="publish">
         <img class="publish__img" src="http://placehold.it/150x100" alt="here ur photo">
-        <button class="publish__сut" type="button">Обрезать</button>
-        <button class="publish__fill" type="button">Залоивка</button>
-        <button class="publish__contrast" type="button">Контраст</button>
+        <div class="publish__edit">
+            <button class="publish__edit-btn edit-btn edit-btn--сut" type="button">Обрезать</button>
+            <button class="publish__edit-btn edit-btn edit-btn--fill" type="button">Залоивка</button>
+            <button class="publish__edit-btn edit-btn edit-btn--contrast" type="button">Контраст</button>
+        </div>
         <div class="publish__range range">
             <div class="range__bar">
                 <div class="range__bar-item bar-item--active"></div>
