@@ -1,3 +1,6 @@
+$tablet-width: 768px;
+$desktop-width: 1200px;
+
 .arguments {
   background-color: #f2f2f2;
   padding: 45px 0 0 0;
@@ -24,4 +27,56 @@
 .arguments__preview-app {
   min-height: 280px;
   margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+
+  .arguments {
+    height: 725px;
+  }
+  .arguments__bottom-block {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .arguments__images {
+    width: 50%;
+    left: 20px;
+  }
+
+  .arguments__preview-app {
+    width: 256px;
+    height: 545px;
+    margin: 40px 0 0 20px;
+  }
+
+  .arguments__motivation-list {
+    margin: 95px 35px 0 0;
+    text-align: left;
+    min-width: 50%;
+  }
+
+  .arguments__motivation-item {
+    max-width: 310px;
+  }
+
+  .arguments__iphone-screen-mobile,
+  .arguments__iphone-screen-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .arguments__iphone-screen-mobile,
+  .arguments__iphone-screen-tablet {
+    display: none;
+  }
+
+  .arguments__iphone-screen-desktop {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
 }

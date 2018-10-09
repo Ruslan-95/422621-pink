@@ -1,3 +1,6 @@
+$tablet-width: 768px;
+$desktop-width: 1200px;
+
 .slider {
   background: #ffffff;
   margin: 50px auto 50px;
@@ -11,4 +14,15 @@
 .slider__dotes {
   margin: 40px auto 0;
   max-width: 280px;
+}
+
+@media (min-width: $tablet-width) {
+  .slider {
+    max-width: 100%;
+  }
+
+  .slider__slide {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }

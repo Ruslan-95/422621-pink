@@ -1,3 +1,6 @@
+$tablet-width: 768px;
+$desktop-width: 1200px;
+
 .home-screen {
   min-height: 270px;
   background: #2b3848;
@@ -19,4 +22,14 @@
   display: flex;
   justify-content: center;
   margin: 30px 0 30px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .home-screen {
+    position: absolute;
+    top: 350px;
+    background: transparent;
+    max-width: 320px;
+    padding: 20px;
+  }
 }

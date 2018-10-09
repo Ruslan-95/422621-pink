@@ -11,13 +11,17 @@
     <header class="header">
         <nav class="header__navigation">
             <a class="header__logo-link" href="#">
-                <img class="header__logo-img" src="http://placehold.it/150x100http://placehold.it/150x100" alt="logo">
+                <svg class="header__logo-svg" src="http://placehold.it/150x100http://placehold.it/150x100"
+                     alt="logo"></svg>
             </a>
             <button class="header__navigation-button" type="button"></button>
             <menu class="header__menu-list">
                 <li class="header__menu-item"></li>
             </menu>
         </nav>
+        <figure class="header__hand">
+            <figcaption class="header__hand-title">Взгляните на жизнь иначе</figcaption>
+        </figure>
     </header>
     <section class="home-screen">
         <button class="home-screen__download" type="button">Скачать приложение</button>
@@ -31,27 +35,51 @@
     <section class="arguments">
         <p class="arguments__slogan custom-paragraph">Устали от серости мегаполиса?</p>
         <p class="arguments__slogan custom-paragraph">Нам есть, что вам предложить!</p>
-        <ul class="arguments__motivation-list">
-            <li class="arguments__motivation-item">
-                <h5 class="arguments__motivation-title">Поднимает настроение</h5>
-                <p class="arguments__motivation-paragraph">Приложение позволит вам победить осеннюю хандру и депрессию
-                    буквально в несколько кликов!</p>
-            </li>
-            <li class="arguments__motivation-item">
-                <h5 class="arguments__motivation-title">Меняет мир вокруг</h5>
-                <p class="arguments__motivation-paragraph">Сделайте снимок и украсьте его смайликом или текстовой
-                    подписью,
-                    чтобы усилить эффект</p>
-            </li>
-            <li class="arguments__motivation-item">
-                <h5 class="arguments__motivation-title">Заводит новых друзей</h5>
-                <p class="arguments__motivation-paragraph">Ставьте лайки, комментируйте, делитесь фотографиями с
-                    друзьями и
-                    заводите новых</p>
-            </li>
-        </ul>
-        <img src="../img/iphone-screen-mobile@1x.png" alt="preview application" class="arguments__preview-app">
+        <div class="arguments__bottom-block">
+            <ul class="arguments__motivation-list">
+                <li class="arguments__motivation-item">
+                    <h5 class="arguments__motivation-title">Поднимает настроение</h5>
+                    <p class="arguments__motivation-paragraph">Приложение позволит вам победить осеннюю хандру и
+                        депрессию
+                        буквально в несколько кликов!</p>
+                </li>
+                <li class="arguments__motivation-item">
+                    <h5 class="arguments__motivation-title">Меняет мир вокруг</h5>
+                    <p class="arguments__motivation-paragraph">Сделайте снимок и украсьте его смайликом или текстовой
+                        подписью,
+                        чтобы усилить эффект</p>
+                </li>
+                <li class="arguments__motivation-item">
+                    <h5 class="arguments__motivation-title">Заводит новых друзей</h5>
+                    <p class="arguments__motivation-paragraph">Ставьте лайки, комментируйте, делитесь фотографиями с
+                        друзьями и
+                        заводите новых</p>
+                </li>
+            </ul>
+            <div class="arguments__images">
+                <img src="../img/iphone-screen-mobile@1x.png" alt="preview application"
+                     class="arguments__preview-app arguments__iphone-screen-mobile">
+                <img src="img/iphone-screen-3-tablet@1x.png" alt="preview application"
+                     class="arguments__preview-app arguments__iphone-screen-tablet">
+                <img src="img/iphone-screen-3-desktop@1x.png" alt="preview application"
+                     class="arguments__preview-app arguments__iphone-screen-desktop">
+
+            </div>
+        </div>
     </section>
+
+    <section class="advantages">
+        <svg class="advantages__svg" src="../img/icon-timer.svg" alt="timer"></svg>
+        <div class="advantages__content">
+            <h2 class="advantages__title">Эффект на 24 часа!</h2>
+            <p class="advantages__paragraph">Британские ученые провели исследования
+                и доказали, что положительный эффект
+                от использования приложения длится
+                целые сутки!</p>
+            <a class="advantages__link" href="#">Узнать больше об исследовании</a>
+        </div>
+    </section>
+
     <section class="slider">
         <article class="slider__slide">
             <p class="slider__name">Николай Петров</p>
