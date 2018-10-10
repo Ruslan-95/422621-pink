@@ -30,15 +30,16 @@ $desktop-width: 1200px;
 }
 
 @media (min-width: $tablet-width) {
-
   .arguments {
     height: 725px;
   }
+
   .arguments__bottom-block {
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
   }
+
   .arguments__images {
     width: 50%;
     left: 20px;
@@ -67,7 +68,6 @@ $desktop-width: 1200px;
 }
 
 @media (min-width: $desktop-width) {
-
   .arguments__iphone-screen-mobile,
   .arguments__iphone-screen-tablet {
     display: none;
