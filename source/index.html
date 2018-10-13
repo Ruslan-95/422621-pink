@@ -56,15 +56,17 @@
                 </li>
             </ul>
             <div class="arguments__images">
-                <img src="img/iphone-screen-mobile@1x.png" alt="preview application" class="arguments__preview-app arguments__iphone-screen-mobile">
-                <img src="img/iphone-screen-3-tablet@1x.png" alt="preview application" class="arguments__preview-app arguments__iphone-screen-tablet">
-                <img src="img/iphone-screen-3-desktop@1x.png" alt="preview application" class="arguments__preview-app arguments__iphone-screen-desktop">
+                <img src="img/iphone-screen-mobile@1x.png" alt="preview application"
+                     class="arguments__preview-app arguments__iphone-screen-mobile">
+                <img src="img/iphone-screen-3-tablet@1x.png" alt="preview application"
+                     class="arguments__preview-app arguments__iphone-screen-tablet">
+                <img src="img/iphone-screen-3-desktop@1x.png" alt="preview application"
+                     class="arguments__preview-app arguments__iphone-screen-desktop">
             </div>
         </div>
     </section>
 
     <section class="advantages">
-        <svg class="advantages__svg" src="../img/icon-timer.svg"></svg>
         <div class="advantages__content">
             <h2 class="advantages__title">Эффект на 24 часа!</h2>
             <p class="advantages__paragraph">Британские ученые провели исследования
@@ -77,6 +79,7 @@
 
     <section class="slider">
         <article class="slider__slide">
+            <p class="slider__age">25 лет водитель</p>
             <p class="slider__name">Николай Петров</p>
             <p class="slider__about">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
                 серые
@@ -89,45 +92,91 @@
         </div>
     </section>
     <section class="price">
-        <article class="price__article">
-            <div class="price__title">
-                <p class="price__name">Стандарт</p>
-                <p class="price__rate">3,99 USD</p>
-            </div>
-            <ul class="price__features-list">
-                <li class="price__features-item features-item--yes">
-                    Розовый фильтр
+        <h2 class="visually-hidden">Тарифы</h2>
+        <div class="price__wrapper slider">
+            <ul class="price__list slider__list">
+                <li class="price__item slider__item">
+                    <div class="price__header">
+                        <h3 class="price__title">База</h3>
+                        <p class="price__value">1,99 USD</p>
+                    </div>
+                    <ul class="price__options">
+                        <li class="price__option">Розовый фильтр</li>
+                        <li class="price__option price__option--unavailable">Смайлики</li>
+                        <li class="price__option price__option--unavailable">Комментарии</li>
+                    </ul>
                 </li>
-                <li class="price__features-item features-item--no">
-                    Смайлики
+                <li class="price__item slider__item">
+                    <div class="price__header price__header--is-hit">
+                        <h3 class="price__title">Стандарт</h3>
+                        <p class="price__value">3,99 USD</p>
+                    </div>
+                    <ul class="price__options">
+                        <li class="price__option">Розовый фильтр</li>
+                        <li class="price__option">Смайлики</li>
+                        <li class="price__option price__option--unavailable">Комментарии</li>
+                    </ul>
                 </li>
-                <li class="price__features-item features-item--no">
-                    Комментарии
+                <li class="price__item slider__item">
+                    <div class="price__header">
+                        <h3 class="price__title">Анлим</h3>
+                        <p class="price__value">9,99 USD</p>
+                    </div>
+                    <ul class="price__options">
+                        <li class="price__option">Розовый фильтр</li>
+                        <li class="price__option">Смайлики</li>
+                        <li class="price__option">Комментарии</li>
+                    </ul>
                 </li>
             </ul>
-            <div class="slider__dotes">
-                <button class="slider__dote slider__dote--active"></button>
-                <button class="slider__dote"></button>
-                <button class="slider__dote"></button>
-            </div>
-        </article>
-    </section>
+            <p class="price__toggles slider__toggles">
+                <button class="slider__toggle" type="button">1</button>
+                <button class="slider__toggle slider__toggle--default" type="button">2</button>
+                <button class="slider__toggle" type="button">3</button>
+            </p>
+        </div>
+    </section
     <section class="address">
         <p class="address__title custom-paragraph">Остались вопросы?</p>
         <p class="address__title custom-paragraph">Свяжитесь с нами!</p>
 
-        <p class="address__connect">Звоните:</p>
-        <a class="address__link" href="tel:+78001000900">78001000900</a>
+        <ul class="address__list">
+            <li class="address__item">
+                <p class="address__connect">Звоните:</p>
+                <a class="address__link" href="tel:+78001000900">78001000900</a>
+            </li>
 
-        <p class="address__connect">Пишите:</p>
-        <a class="address__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            <li class="address__item">
+                <p class="address__connect">Пишите:</p>
+                <a class="address__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </li>
 
-        <p class="address__connect">Приезжайте в гости:</p>
-        <a class="address__link">ул. Большая Конюшенная, 19/8</a>
-
+            <li class="address__item">
+                <p class="address__connect">Приезжайте в гости:</p>
+                <a class="address__link">ул. Большая Конюшенная, 19/8</a>
+            </li>
+        </ul>
         <img class="address__map" src="http://placehold.it/150x100" alt="map">
 
     </section>
+
+    <footer class="footer footer-main-page">
+        <a class="footer__logo-link" href="#">
+            <img class="footer__logo-img" src="http://placehold.it/150x100" alt="logo">
+        </a>
+        <ul class="footer__networks-list footer-network">
+            <li class="footer-network__item-logo item-logo item-logo--twitter">
+                <a href="#">Твиттер</a>
+            </li>
+            <li class="footer-network__item-logo item-logo item-logo--facebook">
+                <a href="#">Фейсбук</a>
+            </li>
+            <li class="footer-network__item-logo item-logo item-logo--youtube">
+                <a href="#">Ютуб</a>
+            </li>
+        </ul>
+        <p class="footer__copyright">Разработанно</p>
+    </footer>
 </main>
 </body>
 </html>

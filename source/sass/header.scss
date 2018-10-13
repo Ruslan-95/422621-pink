@@ -43,13 +43,13 @@ $desktop-width: 1200px;
   }
 
   .header__hand {
-    margin: 0;
-    display: block;
-    background: url("../img/iphone-hand-tablet@1x.png") no-repeat transparent;
-    height: 545px;
+    display: flex;
+    background: url(../img/iphone-hand-tablet@1x.png) no-repeat transparent right;
+    min-height: 545px;
     top: 185px;
     position: absolute;
-    width: 660px;
+    min-width: 768px;
+    margin: 0 auto;
   }
 
   .header__hand-title {
@@ -63,12 +63,14 @@ $desktop-width: 1200px;
 }
 
 @media (min-width: $desktop-width) {
-  .header__hand {
-    right: 50px;
+  .header {
+    background: url("../img/bg-back-desktop@1x.jpg") #2b3848 no-repeat right;
   }
 
-  .header__hand-title {
-    right: 860px;
-    left: auto;
+  .header__hand {
+    width: 960px;
+    position: absolute;
   }
+
+
 }

@@ -16,6 +16,10 @@ $desktop-width: 1200px;
   max-width: 280px;
 }
 
+.slider__age {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .slider {
     max-width: 100%;
@@ -24,5 +28,9 @@ $desktop-width: 1200px;
   .slider__slide {
     display: flex;
     flex-direction: column-reverse;
+  }
+
+  .slider__age {
+    display: block;
   }
 }

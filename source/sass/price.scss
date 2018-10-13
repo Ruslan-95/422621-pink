@@ -1,43 +1,198 @@
 .price {
-  background-color: #f2f2f2;
-  min-height: 450px;
-  justify-content: center;
+  padding: 91px $content-padding 6px;
+  overflow: hidden;
+  background: $gray url("../img/bg-triangle-white.svg") 0 0 no-repeat;
+  background-size: 99% auto;
+}
+
+.price__list {
+  @include list-reset;
+  transform: translateX(-100%);
   display: flex;
-  flex-direction: column;
 }
 
-.price__article {
-  min-height: 335px;
-  width: 280px;
-  margin: 0 auto;
-}
-
-.price__features-list {
+.price__item {
+  width: 278px;
+  flex-shrink: 0;
+  margin: 0 1px 20px;
   padding: 0;
-  margin: 0;
-  border-left: 2px solid #e5e5e5;
-  border-right: 2px solid #e5e5e5;
-  text-align: left;
+  background-color: $gray;
+  line-height: 30px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+
+.price__header {
+  position: relative;
+  padding: 16px 0 21px;
+  background-color: $blue;
+  color: $white;
+  text-align: center;
+
+  &--is-hit::before {
+    content: url("../img/bg-hit.svg");
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &--is-hit::after {
+    content: "ХИТ";
+    position: absolute;
+    top: 11px;
+    left: 10px;
+    transform: rotate(-45deg);
+  }
 }
 
 .price__title {
-  background: #2b3848;
-  color: #ffffff;
-  border: 2px solid #e5e5e5;
-}
-
-.price__name {
   margin: 0;
-  padding: 25px 0 15px 0;
-  font-weight: bold;
+  font-size: 18px;
 }
 
-.price__rate {
+.price__value {
   margin: 0;
-  padding: 0 0 25px 0;
+  font-size: 24px;
+  font-weight: lighter;
 }
 
-.price__features-item {
-  padding: 10px 20px 10px 20px;
-  border-bottom: 2px solid #e5e5e5;
+.price__options {
+  @include list-reset;
+  position: relative;
+  text-align: left;
+}
+
+.price__option {
+  padding: 15px 22px 14px;
+  margin-bottom: 2px;
+  background-color: $white;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 16px;
+    width: 31px;
+    height: 31px;
+    background: url("../img/icon-yes.svg") 50% 50% no-repeat;
+    background-size: 32px 23px;
+  }
+
+  &--unavailable::after {
+    content: "";
+    position: absolute;
+    right: 16px;
+    width: 31px;
+    height: 28px;
+    background: url("../img/icon-no.svg") 50% 50% no-repeat;
+    background-size: 32px 23px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .price__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .price__list {
+    transform: translateX(0);
+  }
+
+  .price__item {
+    width: 155px;
+  }
+
+  .price__item:first-child .price__option {
+    &:nth-child(1)::before {
+      content: "Розовый фильтр";
+      padding: 15px 15px 14px;
+      position: absolute;
+      width: 123px;
+      left: -155px;
+      top: 0;
+      font-size: 14px;
+      text-transform: none;
+      background-color: $white;
+    }
+
+    &:nth-child(2)::before {
+      content: "Смайлики";
+      padding: 15px 15px 14px;
+      position: absolute;
+      width: 123px;
+      left: -155px;
+      top: 61px;
+      font-size: 14px;
+      text-transform: none;
+      background-color: $white;
+    }
+
+    &:nth-child(3)::before {
+      content: "Комментарии";
+      padding: 15px 15px 14px;
+      position: absolute;
+      width: 123px;
+      left: -155px;
+      bottom: 0;
+      font-size: 14px;
+      text-transform: none;
+      background-color: $white;
+    }
+  }
+
+  .price__title {
+    font-size: 16px;
+  }
+
+  .price__value {
+    font-size: 18px;
+  }
+
+  .price__option {
+    font-size: 0;
+
+    &::after {
+      right: 50%;
+      transform: translateX(50%);
+    }
+  }
+
+  .price__toggles {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .price {
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+
+  .price__item {
+    width: 234px;
+  }
+
+  .price__item:first-child .price__option {
+    &:nth-child(1)::before {
+      left: -237px;
+      width: 205px;
+      padding-left: 23px;
+      font-size: 18px;
+    }
+
+    &:nth-child(2)::before {
+      left: -237px;
+      width: 205px;
+      padding-left: 23px;
+      font-size: 18px;
+    }
+
+    &:nth-child(3)::before {
+      left: -237px;
+      width: 205px;
+      padding-left: 23px;
+      font-size: 18px;
+    }
+  }
 }

@@ -1,3 +1,6 @@
+$tablet-width: 768px;
+$desktop-width: 1200px;
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -11,4 +14,14 @@
 
 .footer__copyright {
   margin: 0 0 40px 0;
+}
+
+.footer-main-page {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .footer-main-page {
+    display: flex;
+  }
 }
