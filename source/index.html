@@ -8,6 +8,7 @@
 </head>
 <body>
 <main class="wrapper">
+
     <header class="header">
         <nav class="header__navigation">
             <a class="header__logo-link" href="#">
@@ -77,22 +78,30 @@
         </div>
     </section>
 
-    <section class="slider">
-        <article class="slider__slide">
-            <p class="slider__age">25 лет водитель</p>
-            <p class="slider__name">Николай Петров</p>
-            <p class="slider__about">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
-                серые
-                вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-        </article>
-        <div class="slider__dotes">
-            <button class="slider__dote slider__dote--active"></button>
-            <button class="slider__dote "></button>
-            <button class="slider__dote "></button>
+    <section class="reviews">
+        <h2 class="visually-hidden">Отзывы пользователей</h2>
+        <div class="reviews__wrapper slider">
+            <div class="reviews__list slider__list">
+                <blockquote class="reviews__item slider__item">
+                    <div class="reviews__author">
+                        <cite class="reviews__author-name">Николай Петров</cite>
+                        <p class="reviews__author-info">25 лет, водитель трамвая</p>
+                    </div>
+                    <p class="reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть
+                        на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
+                        фотографии!&raquo;</p>
+                </blockquote>
+            </div>
+            <p class="reviews__toggles slider__toggles">
+                <button class="slider__toggle slider__toggle--default" type="button">1</button>
+                <button class="slider__toggle" type="button">2</button>
+                <button class="slider__toggle" type="button">3</button>
+            </p>
         </div>
     </section>
+
     <section class="price">
-        <h2 class="visually-hidden">Тарифы</h2>
+        <h2 class="visually-hidden">Тарифы1</h2>
         <div class="price__wrapper slider">
             <ul class="price__list slider__list">
                 <li class="price__item slider__item">
@@ -135,7 +144,8 @@
                 <button class="slider__toggle" type="button">3</button>
             </p>
         </div>
-    </section
+    </section>
+
     <section class="address">
         <p class="address__title custom-paragraph">Остались вопросы?</p>
         <p class="address__title custom-paragraph">Свяжитесь с нами!</p>
