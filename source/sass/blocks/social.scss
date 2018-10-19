@@ -1,0 +1,28 @@
+@import "../var";
+
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+.social__link {
+  display: block;
+  margin: 0 9px;
+  width: 45px;
+  height: 45px;
+  box-shadow: 0 0 0 3px #e9ebec;
+  border-radius: 50%;
+  font-size: 0;
+
+  &--twitter {
+    background: $white url("/source/img/icon-twitter.svg") 50% 50% no-repeat;
+  }
+
+  &--facebook {
+    background: $white url("/source/img/icon-facebook.svg") 50% 50% no-repeat;
+  }
+
+  &--youtube {
+    background: $white url("/source/img/icon-youtube.svg") 55% 50% no-repeat;
+  }
+}

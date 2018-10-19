@@ -4,77 +4,88 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <link href="css/style.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<main class="wrapper">
 
-    <header class="header">
-        <nav class="header__navigation">
-            <a class="header__logo-link" href="#">
-                <svg class="header__logo-svg" src="http://placehold.it/150x100" alt="logo"></svg>
-            </a>
-            <button class="header__navigation-button" type="button"></button>
-            <menu class="header__menu-list">
-                <li class="header__menu-item"></li>
-            </menu>
-        </nav>
-        <figure class="header__hand">
-            <figcaption class="header__hand-title">Взгляните на жизнь иначе</figcaption>
-        </figure>
-    </header>
-    <section class="home-screen">
-        <button class="home-screen__download" type="button">Скачать приложение</button>
-        <ul class="home-screen__platform-list platform">
-            <li class="platform__logo-item logo-item logo-item--ios">iOS</li>
-            <li class="platform__logo-item logo-item logo-item--android">Android</li>
-            <li class="platform__logo-item logo-item logo-item--windows">Windows</li>
+<header class="header">
+    <div class="header__wrapper">
+        <a class="header__logo">
+            <img class="header__logo-image" src="img/logo-pink-white-mobile.svg" width="74" height="22" alt="Pink">
+        </a>
+        <button class="header__toggle" type="button">Close</button>
+    </div>
+    <nav class="header__main-nav main-nav">
+        <ul class="main-nav__list">
+            <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--current">123</a></li>
+            <li class="main-nav__item">
+                <a class="main-nav__link" href="photo.html">123</a></li>
+            <li class="main-nav__item">
+                <a class="main-nav__link" href="form.html">123</a></li>
+            <li class="main-nav__item">
+                <a class="main-nav__link" href="https://htmlacademy.ru/">academy</a></li>
         </ul>
-        <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-    </section>
-    <section class="arguments">
-        <p class="arguments__slogan custom-paragraph">Устали от серости мегаполиса?</p>
-        <p class="arguments__slogan custom-paragraph">Нам есть, что вам предложить!</p>
-        <div class="arguments__bottom-block">
-            <ul class="arguments__motivation-list">
-                <li class="arguments__motivation-item">
-                    <h5 class="arguments__motivation-title">Поднимает настроение</h5>
-                    <p class="arguments__motivation-paragraph">Приложение позволит вам победить осеннюю хандру и
-                        депрессию
-                        буквально в несколько кликов!</p>
+    </nav>
+</header>
+
+<main class="page-main page-main--index">
+
+    <h1 class="visually-hidden">PINK - самое розовое мобильное приложение</h1>
+
+    <section class="intro">
+        <img class="intro__image" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="Приложение PINK">
+        <div class="intro__download download">
+            <p class="download__title">Взгляните на жизнь иначе!</p>
+            <ul class="download__list">
+                <li class="download__item download__item--default">
+                    <a class="download__link download__link--default" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
                 </li>
-                <li class="arguments__motivation-item">
-                    <h5 class="arguments__motivation-title">Меняет мир вокруг</h5>
-                    <p class="arguments__motivation-paragraph">Сделайте снимок и украсьте его смайликом или текстовой
-                        подписью,
-                        чтобы усилить эффект</p>
+                <li class="download__item">
+                    <a class="download__link download__link--ios" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение на iOS</a>
                 </li>
-                <li class="arguments__motivation-item">
-                    <h5 class="arguments__motivation-title">Заводит новых друзей</h5>
-                    <p class="arguments__motivation-paragraph">Ставьте лайки, комментируйте, делитесь фотографиями с
-                        друзьями и
-                        заводите новых</p>
+                <li class="download__item">
+                    <a class="download__link download__link--android" href="https://play.google.com/store/apps?hl=ru">Скачать приложение на Android</a>
+                </li>
+                <li class="download__item">
+                    <a class="download__link download__link--windows" href="https://www.microsoft.com/ru-ru/store/appsvnext/windows">Скачать приложение на Windows</a>
                 </li>
             </ul>
-            <div class="arguments__images">
-                <img src="img/iphone-screen-mobile@1x.png" alt="preview application"
-                     class="arguments__preview-app arguments__iphone-screen-mobile">
-                <img src="img/iphone-screen-3-tablet@1x.png" alt="preview application"
-                     class="arguments__preview-app arguments__iphone-screen-tablet">
-                <img src="img/iphone-screen-3-desktop@1x.png" alt="preview application"
-                     class="arguments__preview-app arguments__iphone-screen-desktop">
-            </div>
+            <p class="download__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
     </section>
 
-    <section class="advantages">
-        <div class="advantages__content">
-            <h2 class="advantages__title">Эффект на 24 часа!</h2>
-            <p class="advantages__paragraph">Британские ученые провели исследования
-                и доказали, что положительный эффект
-                от использования приложения длится
-                целые сутки!</p>
-            <a class="advantages__link" href="#">Узнать больше об исследовании</a>
+    <section class="information">
+        <h2 class="visually-hidden">Информация о приложении</h2>
+        <header class="information__header">
+            <p class="information__intro">Устали от серости мегаполиса?</p>
+            <p class="information__intro">Нам есть, что вам предложить!</p>
+        </header>
+        <ul class="information__list">
+            <li class="information__item">
+                <img class="information__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Фотография, сделанная в нашем приложении">
+                <h3 class="information__title">Поднимает настроение</h3>
+                <p class="information__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="information__item">
+                <img class="information__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Фотография, сделанная в нашем приложении">
+                <h3 class="information__title">Меняет мир вокруг</h3>
+                <p class="information__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить&nbsp;эффект</p>
+            </li>
+            <li class="information__item">
+                <img class="information__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Фотография, сделанная в нашем приложении">
+                <h3 class="information__title">Заводит новых&nbsp;друзей</h3>
+                <p class="information__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+        </ul>
+
+    </section>
+
+    <section class="effect">
+        <div class="effect__wrapper">
+            <h2 class="effect__title">Эффект на&nbsp;24&nbsp;часа!</h2>
+            <p class="effect__text">Британские ученые провели исследования и&nbsp;доказали, что&nbsp;положительный эффект от&nbsp;использования приложения длится целые сутки!</p>
+            <a href="https://britishscientists.org" class="effect__link">Узнать больше об исследовании</a>
         </div>
     </section>
 
@@ -87,9 +98,21 @@
                         <cite class="reviews__author-name">Николай Петров</cite>
                         <p class="reviews__author-info">25 лет, водитель трамвая</p>
                     </div>
-                    <p class="reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть
-                        на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
-                        фотографии!&raquo;</p>
+                    <p class="reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+                </blockquote>
+                <blockquote class="reviews__item slider__item">
+                    <div class="reviews__author">
+                        <cite class="reviews__author-name">Второй автор</cite>
+                        <p class="reviews__author-info">О втором авторе</p>
+                    </div>
+                    <p class="reviews__text">Второй отзыв</p>
+                </blockquote>
+                <blockquote class="reviews__item slider__item">
+                    <div class="reviews__author">
+                        <cite class="reviews__author-name">Третий автор</cite>
+                        <p class="reviews__author-info">О третьем авторе</p>
+                    </div>
+                    <p class="reviews__text">Третий отзыв</p>
                 </blockquote>
             </div>
             <p class="reviews__toggles slider__toggles">
@@ -101,7 +124,7 @@
     </section>
 
     <section class="price">
-        <h2 class="visually-hidden">Тарифы1</h2>
+        <h2 class="visually-hidden">Тарифы</h2>
         <div class="price__wrapper slider">
             <ul class="price__list slider__list">
                 <li class="price__item slider__item">
@@ -146,47 +169,48 @@
         </div>
     </section>
 
-    <section class="address">
-        <p class="address__title custom-paragraph">Остались вопросы?</p>
-        <p class="address__title custom-paragraph">Свяжитесь с нами!</p>
-
-        <ul class="address__list">
-            <li class="address__item">
-                <p class="address__connect">Звоните:</p>
-                <a class="address__link" href="tel:+78001000900">78001000900</a>
-            </li>
-
-            <li class="address__item">
-                <p class="address__connect">Пишите:</p>
-                <a class="address__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </li>
-
-            <li class="address__item">
-                <p class="address__connect">Приезжайте в гости:</p>
-                <a class="address__link">ул. Большая Конюшенная, 19/8</a>
-            </li>
-        </ul>
-        <img class="address__map" src="http://placehold.it/150x100" alt="map">
-
+    <section class="contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <div class="contacts__wrapper">
+            <p class="contacts__intro">Остались вопросы? Свяжитесь с нами!</p>
+            <p class="contacts__item">
+                <b class="contacts__title">Звоните:</b>
+                <a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
+            </p>
+            <p class="contacts__item">
+                <b class="contacts__title">Пишите:</b>
+                <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </p>
+            <p class="contacts__item">
+                <b class="contacts__title">Приезжайте в гости:</b>
+                <a class="contacts__link" target="_blank" href="https://www.google.ru/maps/place/%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F+%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB.,+19%2F8,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+191186/@59.9387165,30.3208587,17z/data=!3m1!4b1!4m5!3m4!1s0x4696310fca145cc1:0x42b32648d8238007!8m2!3d59.9387165!4d30.3230474">ул. Большая Конюшенная,&nbsp;19/8</a>
+            </p>
+        </div>
+        <img class="contacts__map" src="img/bg-map-mobile@1x.png" width="320" height="645" alt="г.Санкт-Петербург, ул. Большая Конюшенная, 19/8">
     </section>
-
-    <footer class="footer footer-main-page">
-        <a class="footer__logo-link" href="#">
-            <img class="footer__logo-img" src="http://placehold.it/150x100" alt="logo">
-        </a>
-        <ul class="footer__networks-list footer-network">
-            <li class="footer-network__item-logo item-logo item-logo--twitter">
-                <a href="#">Твиттер</a>
-            </li>
-            <li class="footer-network__item-logo item-logo item-logo--facebook">
-                <a href="#">Фейсбук</a>
-            </li>
-            <li class="footer-network__item-logo item-logo item-logo--youtube">
-                <a href="#">Ютуб</a>
-            </li>
-        </ul>
-        <p class="footer__copyright">Разработанно</p>
-    </footer>
 </main>
+
+<footer class="footer">
+    <a class="footer__logo" href="index.html">
+        <img class="footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип PINK">
+    </a>
+    <ul class="footer__social social">
+        <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">Twitter</a>
+        </li>
+        <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">Facebook</a>
+        </li>
+        <li class="social__item">
+            <a class="social__link social__link--youtube" href="#">YouTube</a>
+        </li>
+    </ul>
+    <address class="footer__author">
+        <p class="footer__text">Разработано</p>
+        <a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="footer__link-logo" src="img/logo-htmlacademy.svg" width="26" height="34" alt="HTML Academy">
+        </a>
+    </address>
+</footer>
 </body>
 </html>
