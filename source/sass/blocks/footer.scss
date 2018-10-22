@@ -1,45 +1,45 @@
 @import "../var";
 @import "../mixin";
 
-.page-footer {
+.footer {
   padding: 48px 0;
   text-align: center;
 }
 
-.page-footer__social {
+.footer__social {
   @include list-reset;
   padding: 36px 0;
 }
 
-.page-footer__author {
+.footer__author {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.page-footer__text {
+.footer__text {
   margin-right: 15px;
   line-height: 18px;
   color: $blue;
   font-style: normal;
 }
 
-.page-footer__link {
+.footer__link {
   display: block;
   width: 26px;
   height: 34px;
 }
 
-.page-main--index + .page-footer {
+.main--index + .footer {
   display: none;
 }
 
 @media (min-width: $tablet-width) {
-  .page-main--index + .page-footer {
+  .main--index + .footer {
     display: flex;
   }
 
-  .page-footer {
+  .footer {
     padding: 0 $content-padding 10px;
     display: flex;
     justify-content: space-between;
@@ -47,18 +47,18 @@
     align-items: center;
   }
 
-  .page-footer__social {
+  .footer__social {
     padding-right: 20px;
     padding-top: 41px;
   }
 
-  .page-footer__author {
+  .footer__author {
     margin-top: 10px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .page-footer {
+  .footer {
     padding: 20px 130px 30px;
   }
 }

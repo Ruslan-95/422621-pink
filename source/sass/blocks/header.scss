@@ -1,11 +1,11 @@
 @import "../var";
 @import "../mixin";
 
-.page-header {
+.header {
   @include indent-reset;
 }
 
-.page-header__wrapper {
+.header__wrapper {
   position: absolute;
   top: 0;
   left: 0;
@@ -22,7 +22,7 @@
   box-sizing: border-box;
 }
 
-.page-header__toggle {
+.header__toggle {
   width: 24px;
   height: 23px;
   font-size: 0;
@@ -32,27 +32,27 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-header__wrapper {
+  .header__wrapper {
     padding: 23px $content-padding 40px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .page-header {
+  .header {
     position: absolute;
     width: 100%;
     display: flex;
     align-items: center;
   }
 
-  .page-header__wrapper {
+  .header__wrapper {
     padding-left: 130px;
     padding-right: 130px;
     background-color: rgba($black, 0.3%);
     border: none;
   }
 
-  .page-header__toggle {
+  .header__toggle {
     display: none;
   }
 }
