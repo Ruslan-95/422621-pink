@@ -3,7 +3,6 @@
 * Студент: [Ruslan Muradov](https://up.htmlacademy.ru/adaptive/15/user/422621).
 * Наставник: [Oleg WakeDaFuckUp Zubov](https://htmlacademy.ru/profile/id42701).
 
----
 
 **Обратите внимание, что папка с вашими исходными файлами — `source/`.**
 
